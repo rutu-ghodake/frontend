@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+    <style>
+       *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+.container{
+    width: 100%;
+    height: 2000px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+}
+.image{
+    position: relative;
+}
+
+.image img{
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+.image .text{
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    transform: translateY(-50%);
+    padding: 25px 35px;
+    background: rgba(255,255,255,0.35);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 8px;
+}
+.image .text h1{
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+.image .text h1{
+    color: rgb(120, 0, 0);
+}
+.image .btn1
+{
+    width: 30%;
+    height: 30px;
+    background-color:rgb(170, 12, 12) ;
+    color: white;
+}
+.image .btn2
+{
+    width: 30%;
+    height: 30px;
+    margin-left: 30px;
+    background-color:rgb(4, 4, 59);
+    color: white;
+}
+.slide1
+{
+    width: 100%;
+    height: 450px;
+    display: flex;
+}
+.slide1 .box1
+{
+    width:50%;
+    height: 450px;
+    display:grid;
+    
+}
+.box1 img{
+    width: 80%;
+    place-self: center center;
+    border-radius: 2%;
+    height: 330px;
+    margin-left: 30px;
+    
+}
+.slide1 .box2
+{
+    width: 50%;
+    height: 450px;
+}
+.box2 h1
+{
+    margin-top: 36px;
+}
+.box2 p{
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 20px;
+}
+.main
+{
+    background-image: url(../image/people.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 650px;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(12px);
+    padding:60px;
+    text-align:center;
+}
+.main .main-box{
+    display:flex;
+    justify-content:center;
+    /* gap:20px; */
+    margin-top:90px;
+}
+.main .box3{
+    background:#fff;
+    padding:20px;
+    width:380px;
+    height: 250px;
+}
+.main .box4{
+    background-color: rgb(1, 1, 53);
+    color:#fff;
+    width: 380px;
+    padding: 20px;
+    height: 250px;
+}
+.box3 i{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 26px;
+    color: red;
+}
+.box4 i{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 26px;
+    color: red;
+}
+.main h2{
+    margin-top: 15px;
+}
+.main h3
+{
+    color: red;
+    font-weight: bolder;
+}
+.main p{
+    margin-top: 12px;
+}
+.review
+{
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+}
+.review h1{
+    font-size: 55px;
+    color: red;
+}
+.review .happy
+{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 2px;
+}
+.review p
+{
+    margin-top: 20px;
+    padding-left: 230px;
+    padding-right: 230px;
+}
+.review .image1 img{
+    width: 9%;
+    height: 120px;
+    border-radius: 50%;
+}
+.review h5{
+    color: red;
+}
+.content
+{
+    width: 100%;
+    background-image: url(../image/meeting2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1000px;
+    padding:60px;
+    text-align:center;
+}
+.content .content-box
+{
+    display:flex;
+    justify-content:center;
+    /* gap:20px; */
+    margin-top:90px;
+}
+.content h2
+{
+    color: red;
+    font-weight: bolder;
+}
+.content-box .table1
+{
+    background-color:white ;
+    height: 500px;
+    margin-right: 20px;
+    width: 30%;
+    margin-left: 140px;
+}
+.content-box .table2
+{
+    background-color: white;
+    width: 30%;
+}
+.content-box .table3
+{
+    background-color:white ;
+    height: 500px;
+    margin-left: 20px;
+    margin-right: 140px;
+    width: 30%;
+}
+.table1 h4{
+    margin-top: 40px;
+}
+.table1 h1{
+    margin-top: 20px;
+    color: red;
+    font-size: 50px;
+}
+.table1 h1 h6{
+    display: flex;
+    font-size: 25px;
+}
+.table1 p{
+    margin-top: 30px;
+    padding: 10px;
+}
+.table1 .btn1
+{
+    margin-top: 80px;
+    border: 1px solid black;
+    width: 100%;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.table2 h4{
+    margin-top: 40px;
+}
+.table2 h1{
+    margin-top: 20px;
+    color: red;
+    font-size: 50px;
+}
+.table2 h1 h6{
+    display: flex;
+    font-size: 25px;
+}
+.table2 p{
+    margin-top: 30px;
+    padding: 10px;
+}
+.table2 .btn2
+{
+    margin-top: 80px;
+    border: 1px solid black;
+    width: 100%;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.table3 h4{
+    margin-top: 40px;
+}
+.table3 h1{
+    margin-top: 20px;
+    color: red;
+    font-size: 50px;
+}
+.table3 h1 h6{
+    display: flex;
+    font-size: 25px;
+}
+.table3 p{
+    margin-top: 30px;
+    padding: 10px;
+}
+.table3 .btn1
+{
+    margin-top: 80px;
+    border: 1px solid black;
+    width: 100%;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="../image/logo.webp">
+                <h1>Consuloan</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">SERVICE</a></li>
+                    <li><a href="">PAGES</a></li>
+                    <li><a href="">PROJECTS</a></li>
+                    <li><a href="">NEWS</a></li>
+                    <li><a href="">SHOP</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="image">
+            <img src="../image/1.png">
+           <div class="text"><h1><span style="color: black;">SAVE</span> TIME<br><span style="color: black;">SAVE</span> MONEY <br> GROW & SUCCEED</h1>
+            <button class="btn1">Our Company</button>
+            <button class="btn2">Our Survices</button>
+            </div>
+        </div>
+            <div class="slide1">
+                <div class="box1">
+                    <img src="../image/image.png">
+                </div>
+                <div class="box2">
+                    <h1><span style="color: rgb(128, 6, 6);">30 Years</span> of Successful Business<br> Consulting</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At saepe quisquam fugit? Minima laboriosam harum consequuntur? Eius excepturi natus similique eum nemo doloremque quas commodi quisquam saepe tenetur deleniti asperiores maiores sed alias laborum, deserunt labore.<br> nobis ratione quos. Dolores corporis sequi recusandae iure tenetur, nisi, id Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dolor!numquam natus accusamus nesciunt excepturi rerum eius, rem quis? Inventore alias commodi autem.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam aliquid eos quisquam, non beatae veritatis alias odio harum eius aspernatur! Tempore commodi excepturi dignissimos culpa alias sunt repudiandae voluptas at ab numquam temporibus quod cumque cum ipsa recusandae debitis eligendi architecto atque illum voluptatum, vitae ratione repellendus! Praesentium, ullam fugit?</p>
+                </div>
+            </div>
+            <div class="main">
+                <h1>Our Industry</h1>
+                <h3>________</h3>
+                <div class="main-box">
+                <div class="box3">
+                    <i class="fa-solid fa-building"></i>
+                   <h2> Property Management</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat pariatur exercitationem vitae consectetur nesciunt eum?Lorem ipsum dolor sit amet.
+                </p></div>
+                <div class="box4">
+                    <i class="fa-brands fa-searchengin"></i>
+                    <h2>Strategic Planning</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat pariatur exercitationem vitae consectetur nesciunt eum?Lorem ipsum dolor sit amet.
+                </p></div>
+                <div class="box3">
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <h2>Investment Opportunities</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat pariatur exercitationem vitae consectetur nesciunt eum?Lorem ipsum dolor sit amet.
+                </p></div>
+                </div>
+            </div>
+            <div class="review">
+                <h1>"</h1>
+                <div class="happy">
+                    2000+ Happy Client
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nesciunt, rem commodi dignissimos consequatur maiores, cum non, tenetur odio veniam cupiditate natus harum tempora aliquid assumenda earum laborum neque.
+                     Perspiciatis aspernatur excepturi corporis distinctio commodi? Veniam dignissimos reiciendis repellat accusamus itaque. Eveniet nulla alias unde libero commodi maxime totam id recusandae, sit pariatur accusantium explicabo laboriosam ut veritatis provident quis maiores laudantium? Veritatis eveniet alias praesentium, eaque deleniti aspernatur modi beatae blanditiis hic, voluptatem voluptates quae ducimus ab autem a suscipit ad voluptate error dolores laborum facilis ullam, unde magni pariatur. Facilis hic tempore molestiae necessitatibus alias vel quam error!</p>
+                <div class="image1">
+                    <img src="../image/male.jpg">
+                </div>
+                <h4>Narendra Modi</h4>
+                <h5>*****</h5>
+            </div>
+            <div class="content">
+                <h1>Our Pricing</h1>
+                <h2>__________</h2>
+                <div class="content-box">
+                <div class="table1">
+                    <h4>STARTER PLAN</h4>
+                    <h1>$ 35<h6>/month</h6></h1>
+                    <p>Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti est aut culpa natus. Maxime dolorem ea odit voluptas ipsum officiis! sit amet consectetur adipisicing elit. Architecto aut ullam consectetur sapiente, doloribus ipsum?</p>
+                    <div class="btn1">
+                        SELECT PLAN
+                    </div>
+                </div>
+                <div class="table2">
+                    <h4>SILVER PLAN</h4>
+                    <h1>$ 65<h6>/month</h6></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam et esse accusamus modi dolorum nisi molestias mollitia, maiores unde amet? elit. Architecto aut ullam consectetur sapiente, doloribus ipsum?</p>
+                    <div class="btn2">
+                        SELECT PLAN
+                    </div>
+                </div>
+                <div class="table3">
+                    <h4>GOLD PLAN</h4>
+                    <h1>$ 95<h6>/month</h6></h1>
+                    <p>Lorem ipsum dolor sit amet Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, optio similique? Nulla quod debitis facilis temporibus architecto, expedita eveniet recusandae? consectetur adipisicing elit. Architecto aut ullam consectetur sapiente, doloribus ipsum?</p>
+                    <div class="btn1">
+                        SELECT PLAN
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

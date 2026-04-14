@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>R SmartDine</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: #111;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #ffcc00;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    .login-btn {
+      background: #ffcc00;
+      border: none;
+      padding: 8px 14px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* ===== MAIN IMAGE ===== */
+    .hero {
+      height: 400px;
+      background: url("https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg") center/cover;
+      position: relative;
+      color: white;
+    }
+
+    .hero-text {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      font-size: 28px;
+    }
+
+    section {
+      padding: 40px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin: 10px 0;
+    }
+
+    button {
+      padding: 8px 12px;
+      margin: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="logo">R SmartDine</div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#book">Book</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <button class="login-btn">Login</button>
+</header>
+
+<!-- ================= MAIN IMAGE ================= -->
+<div class="hero" id="home">
+  <div class="hero-text">
+    Smart Dining Starts at Your Table
+  </div>
+</div>
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
+  <h2>Services & Menu</h2>
+
+  <h3>Meals</h3>
+  <div class="card">Breakfast Menu <button>Order</button></div>
+  <div class="card">Lunch Menu <button>Order</button></div>
+  <div class="card">Dinner Menu <button>Order</button></div>
+
+  <h3>Mood Based Food</h3>
+  <button>Happy</button>
+  <button>Sad</button>
+  <button>Angry</button>
+  <button>Party</button>
+
+  <h3>Drinks</h3>
+  <button>Hot</button>
+  <button>Cold</button>
+
+  <h3>Common Requests</h3>
+  <button>Water</button>
+  <button>Salt</button>
+  <button>Emergency</button>
+</section>
+
+<!-- ================= BOOK ================= -->
+<section id="book">
+  <h2>Book Your Experience</h2>
+
+  <h3>Table Booking</h3>
+  <select>
+    <option>Family</option>
+    <option>Couple</option>
+    <option>Friends</option>
+  </select>
+
+  <h3>Birthday Decoration</h3>
+  <select>
+    <option>Romantic</option>
+    <option>Kids</option>
+    <option>Family</option>
+  </select>
+
+  <h3>Parking Booking</h3>
+  <select>
+    <option>4 Wheeler</option>
+  </select>
+
+  <br><br>
+  <button>Confirm Booking</button>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <h2>About Us</h2>
+  <p>
+    R SmartDine is a next-generation restaurant platform that allows
+    QR-based ordering, smart billing, and digital booking.
+  </p>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: rutujaghodake082@gmail.com</p>
+  <p>Phone: +91 9579550316</p>
+</section>
+
+</body>
+</html>

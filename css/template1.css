@@ -1,0 +1,507 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+.container
+{
+    width: 100%;
+    height: 2000px;
+}
+.header
+{
+    width: 100%;
+    height: 40px;
+}
+nav{
+    display: flex;
+    width: 100%;
+}
+nav ul{
+    display: inline-flex;
+    list-style: none;
+}
+nav ul li i
+{
+    font-weight: bolder;
+    font-size: 29px;
+    margin-left: 980px;
+}
+nav ul li{
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-left: 200px;
+}
+.image
+{
+    width: 100%;
+    position: relative;
+}
+.image img{
+    width: 100%;
+    height:650px;
+}
+.image .text
+{
+    position: absolute;
+    top: 40%;             
+    left: 20%;            
+    transform: translate(-50%, -50%);  
+    font-size: 39px;
+    text-align: center;
+    color: black;
+    font-style: oblique;
+    height: 650px;
+    margin-top: 9%;
+}
+.image .text p
+{
+        font-size:25px;
+        margin-top: 5px;
+        font-style: italic;
+}
+.image .text h6{
+    margin-top: 15px;
+    margin-left: 1%;
+}
+.text .button
+{
+    border-radius: 20px;
+    background-color: black;
+    color: aliceblue;
+    width: 43%;
+    margin-left: 25%;
+    margin-top: 5%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.text .button:hover
+{
+    background-color:navy;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.main
+{
+    display: flex;
+    color: antiquewhite;
+    height: 300px;
+    width: 100%;
+    margin-top: 0.00001%;
+}
+.main .box1
+{
+    background-color: black;
+    width: 33.33%;
+}
+.main .box2
+{
+    background-color: rgb(64,211,211);
+     width: 33.33%;
+}
+.main .box3
+{
+    background-color: rgb(30,124,161);
+     width: 33.33%;
+}
+.box1 h1
+{
+    text-align: center;
+    margin-top: 25px;
+}
+.box1 p
+{
+    text-align: center;
+    margin-top: 40px;
+}
+.box2 h1
+{
+    text-align: center;
+    margin-top: 25px;
+}
+.box2 p
+{
+    text-align: center;
+    margin-top: 40px;
+}
+.box3 h1
+{
+    text-align: center;
+    margin-top: 25px;
+}
+.box3 p
+{
+    text-align: center;
+    margin-top: 40px;
+}
+.about
+{
+    width: 100%;
+    height:350px ;
+}
+.about .logo
+{
+    text-align: center;
+    margin-top: 3%;
+}
+.logo i
+{
+    font-weight: bolder;
+    font-size: 50px;
+}
+.about h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.about p
+{
+    font-style: oblique;
+    text-align: center;
+}
+.about .button1
+{
+    text-align: center;
+    margin-top: 30px;
+    background-color: beige;
+    width: 5%;
+    margin-left: 45%;
+    margin-right: 50%;
+    border: 1px solid black;
+}
+.button1:hover
+{
+    background-color:skyblue;
+    transform: scale(1.1);
+}
+.slider
+{
+    width: 100%;
+    background-color: rgb(28, 224, 224);
+    height: 500px;
+    position: relative;
+    margin-top: 5px;
+}
+.image1 img
+{
+    width:50%;
+    position:absolute;
+    height: 500px;
+}
+.side
+{
+   height: 500px;
+   margin-left: 50%;
+   text-align: center;
+   padding: 100px;
+   color: white;
+   font-style: italic;
+}
+.side p{
+    margin-top: 6px;
+}
+.slider .button2
+{
+    text-align: center;
+    margin-top: 30px;
+    color:black;
+    background-color: aliceblue;
+    width: 15%;
+    margin-left: 45%;
+    margin-right: 50%;
+    border: 1px solid black;
+    height: 25px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.button2:hover
+{
+    background-color:rgb(205, 182, 226);
+    transform: scale(1.1);
+}
+.service
+{
+    width: 100%;
+    height: 600px;
+}
+.service h1
+{
+    text-align: center;
+    margin-top: 22px;
+}
+.service i
+{
+    border: 1px solid black;
+    font-size: 48px;
+    border-radius: 50%;
+    background-color: rgb(28, 224, 224);
+    padding: 7px;
+}
+.service .more p
+{
+    text-align: center;
+    margin-top: 20px;
+}
+.service .boxs
+{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+}
+.service .boxs .boxr1
+{
+    width: 30%;
+}
+.service .boxs .boxr1 h2
+{
+    margin-top: 15px;
+}
+.service .boxs .boxr1 p
+{
+    margin-top: 15px;
+}
+.service .boxs .boxr2
+{
+    width: 30%;
+}
+.service .boxs .boxr2 h2
+{
+    margin-top: 15px;
+}
+.service .boxs .boxr2 p
+{
+    margin-top: 15px;
+}
+.service .boxs .boxr3
+{
+    width: 30%;
+}
+.service .boxs .boxr3 h2
+{
+    margin-top: 15px;
+}
+.service .boxs .boxr3 p
+{
+    margin-top: 15px;
+}
+.service .boxv
+{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+.service .boxv .boxv1
+{
+    width: 30%;
+}
+.service .boxv .boxv1 h2
+{
+    margin-top: 15px;
+}
+.service .boxv .boxv1 p
+{
+    margin-top: 15px;
+}
+.service .boxv .boxv2
+{
+    width: 30%;
+}
+.service .boxv .boxv2 h2
+{
+    margin-top: 15px;
+}
+.service .boxv .boxv2 p
+{
+    margin-top: 15px;
+}
+.service .boxv .boxv3
+{
+    width: 30%;
+}
+.service .boxv .boxv3 h2
+{
+    margin-top: 15px;
+}
+.service .boxv .boxv3 p
+{
+    margin-top: 15px;
+}
+.service .button3
+{
+    text-align: center;
+    margin-top: 30px;
+    color:black;
+    background-color: aliceblue;
+    width: 7%;
+    margin-left: 45%;
+    margin-right: 50%;
+    border: 1px solid black;
+    height: 25px;
+    font-style: italic;
+}
+.button3:hover
+{
+    background-color:rgb(205, 182, 226);
+    transform: scale(1.1);
+}
+.end
+{
+    width: 100%;
+    background-color: aliceblue;
+    height: 500px;
+    position: relative;
+    margin-top: 5px;
+    display: flex;
+}
+.end .side1
+{
+    width: 50%;
+    margin-top: 80px;
+    text-align: center;
+}
+.end .side1 h1{
+    font-weight: bolder;
+}
+.end .side1 p
+{
+    font-weight: bold;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+.end .side1 .p1
+{
+    font-weight: normal;
+}
+.image2 img
+{
+    width:50%;
+    position:absolute;
+    height: 500px;
+}
+.end .button4
+{
+    text-align: center;
+    margin-top: 30px;
+    color:black;
+    background-color: aqua;
+    width: 12%;
+    margin-left: 45%;
+    margin-right: 50%;
+    border: 1px solid black;
+    height: 25px;
+    font-style: italic;
+    border-radius: 20%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+}
+.button4:hover
+{
+    background-color:rgb(205, 182, 226);
+    transform: scale(1.1);
+}
+.last
+{
+    width: 100%;
+    display: flex;
+    background-color: aqua;
+    height: 150px;
+    color: white;
+}
+.last .last1
+{
+    width: 65%;
+    margin-left: 5%;
+    margin-top: 25px;
+}
+.last .last1 h1{
+    font-weight: bold;
+}
+.last .button5
+{
+    margin: 3.5%;
+    margin-left: 6%;
+    height: 17%;
+    border: 1px solid black;
+    width: 7%;
+    text-align: center;
+    margin-top: 4.5%;
+    color: rgb(9, 173, 173);
+    background-color: aliceblue;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.last .button5:hover{
+    background-color: rgb(10, 2, 19);
+    transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    -moz-transform: scale(1,1);
+    -ms-transform: scale(1,1);
+    -o-transform: scale(1,1);
+}
+.last2
+{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    margin-top: 30px;
+}
+.last2 p{
+    margin-top: 10px;
+}
+.last2 .button6
+{
+    margin-top: 300px;
+    border: 1px solid black;
+    width: 8%;
+    margin-left: 45%;
+    height: 5%;
+    background-color: black;
+    color: white;
+}
+.last2 .button6:hover
+{
+    background-color: rgb(3, 3, 88);
+    transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    -moz-transform: scale(1,1);
+    -ms-transform: scale(1,1);
+    -o-transform: scale(1,1);
+}
+.footer
+{
+    width: 100%;
+    background-color: black;
+    height: 100px;
+    /* margin-top: 10px; */
+    /* text-align: center; */
+    color: aliceblue;
+    margin-top: 15px;
+}
+.footer h4{
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    font-weight: 60;
+    padding-top: 35px;
+}

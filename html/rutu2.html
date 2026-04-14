@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consultoan - HTML5 Template</title>
+
+<style>
+
+/* -------- Global -------- */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+}
+
+/* -------- Header -------- */
+header{
+    background:white;
+    padding:15px 0;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#e74c3c;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+}
+
+/* -------- Hero -------- */
+.hero{
+    background:url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
+    background-size:cover;
+    background-position:center;
+    height:450px;
+
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    width:50%;
+    background:rgba(255,255,255,0.85);
+    padding:40px;
+}
+
+.hero h1 span{
+    color:#e74c3c;
+}
+
+.btn{
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    background:#e74c3c;
+    color:white;
+    cursor:pointer;
+}
+
+/* -------- About -------- */
+.about{
+    background:white;
+    padding:60px 0;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.about img{
+    width:100%;
+}
+
+/* -------- Industry -------- */
+.industry{
+    background:url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d");
+    background-size:cover;
+    padding:60px 0;
+    color:white;
+    text-align:center;
+}
+
+.industry-grid{
+    margin-top:40px;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    color:black;
+    padding:25px;
+}
+
+/* -------- Testimonial -------- */
+.testimonial{
+    background:white;
+    padding:60px 0;
+    text-align:center;
+}
+
+.testimonial img{
+    width:70px;
+    border-radius:50%;
+}
+
+/* -------- Pricing -------- */
+.pricing{
+    background:url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d");
+    background-size:cover;
+    padding:60px 0;
+    color:white;
+    text-align:center;
+}
+
+.pricing-grid{
+    margin-top:40px;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.price-card{
+    background:white;
+    color:black;
+    padding:30px;
+}
+
+.price-card h2{
+    color:#e74c3c;
+}
+
+/* -------- News -------- */
+.news{
+    background:white;
+    padding:60px 0;
+}
+
+.news-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.news-card img{
+    width:100%;
+}
+
+/* -------- Footer -------- */
+footer{
+    background:#222;
+    color:white;
+    padding:40px 0;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+footer input{
+    width:100%;
+    padding:8px;
+}
+
+footer button{
+    width:100%;
+    padding:8px;
+    background:#e74c3c;
+    border:none;
+    color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+<div class="container navbar">
+
+<div class="logo">Consultoan</div>
+
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Pages</a></li>
+<li><a href="#">Projects</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+</div>
+</header>
+
+<main>
+
+<!-- Hero -->
+<section class="hero">
+<div class="container hero-content">
+
+<h1>
+SAVE <span>TIME</span><br>
+SAVE <span>MONEY</span><br>
+GROW & SUCCEED
+</h1>
+
+<button class="btn">Our Company</button>
+<button class="btn">Our Services</button>
+
+</div>
+</section>
+
+<!-- About -->
+<section class="about">
+<div class="container about-grid">
+
+<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="About">
+
+<div>
+<h2>30 Years Of Business Consulting</h2>
+<p>
+We help companies grow with expert consulting services and strategies.
+</p>
+
+<button class="btn">Read More</button>
+</div>
+
+</div>
+</section>
+
+<!-- Industry -->
+<section class="industry">
+
+<h2>Our Industry</h2>
+
+<div class="container industry-grid">
+
+<div class="card">
+<h3>Property Management</h3>
+<p>Professional management solutions.</p>
+</div>
+
+<div class="card">
+<h3>Strategic Planning</h3>
+<p>Business growth strategies.</p>
+</div>
+
+<div class="card">
+<h3>Investment</h3>
+<p>Smart investment services.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Testimonial -->
+<section class="testimonial">
+
+<h2>2000+ Happy Clients</h2>
+
+<p>"Consultoan helped us grow successfully."</p>
+
+<br>
+
+<img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Client">
+<p>Alex Pote</p>
+
+</section>
+
+<!-- Pricing -->
+<section class="pricing">
+
+<h2>Our Pricing</h2>
+
+<div class="container pricing-grid">
+
+<div class="price-card">
+<h3>Starter</h3>
+<h2>$35</h2>
+<p>3 Users</p>
+<button class="btn">Select</button>
+</div>
+
+<div class="price-card">
+<h3>Basic</h3>
+<h2>$65</h2>
+<p>10 Users</p>
+<button class="btn">Select</button>
+</div>
+
+<div class="price-card">
+<h3>Pro</h3>
+<h2>$95</h2>
+<p>Unlimited</p>
+<button class="btn">Select</button>
+</div>
+
+</div>
+
+</section>
+
+<!-- News -->
+<section class="news">
+<div class="container">
+
+<h2>Latest News</h2>
+
+<div class="news-grid">
+
+<div class="news-card">
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+<h4>Business Makeover</h4>
+</div>
+
+<div class="news-card">
+<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+<h4>Finance Growth</h4>
+</div>
+
+<div class="news-card">
+<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+<h4>Market Trends</h4>
+</div>
+
+</div>
+
+</div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+
+<div class="container footer-grid">
+
+<div>
+<h3>Consultoan</h3>
+<p>Professional consulting company.</p>
+</div>
+
+<div>
+<h3>Links</h3>
+<p>Home</p>
+<p>About</p>
+<p>Services</p>
+</div>
+
+<div>
+<h3>Recent News</h3>
+<p>Business</p>
+<p>Finance</p>
+<p>Market</p>
+</div>
+
+<div>
+<h3>Newsletter</h3>
+
+<input type="email" placeholder="Email">
+
+<br><br>
+
+<button>Subscribe</button>
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>

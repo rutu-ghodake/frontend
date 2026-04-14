@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>R.V.G Rasoi | Booking</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{background:#f5f5f5}
+.section{display:none}
+.card img{height:180px;object-fit:cover}
+.logo-circle{
+ width:45px;height:45px;border-radius:50%;
+ background:#ffc107;color:#000;
+ display:flex;align-items:center;justify-content:center;
+ font-weight:bold;font-size:22px
+}
+.note{font-size:14px;color:#666}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<nav class="navbar navbar-dark bg-dark px-4">
+  <div class="d-flex align-items-center gap-2">
+    <div class="logo-circle">R</div>
+    <h4 class="text-warning m-0">R.V.G Rasoi</h4>
+  </div>
+</nav>
+
+<div class="container my-5">
+
+<h2 class="text-center mb-4">Booking Services</h2>
+
+<!-- MAIN OPTIONS -->
+<div class="row text-center">
+  <div class="col-md-4 mb-3">
+    <button class="btn btn-warning w-100 p-3" onclick="showSection('table')">Table Booking</button>
+  </div>
+  <div class="col-md-4 mb-3">
+    <button class="btn btn-warning w-100 p-3" onclick="showSection('celebration')">Celebration Booking</button>
+  </div>
+  <div class="col-md-4 mb-3">
+    <button class="btn btn-warning w-100 p-3" onclick="showSection('parking')">Parking Booking</button>
+  </div>
+</div>
+
+<!-- ================= TABLE BOOKING ================= -->
+<div id="table" class="section mt-5">
+<h3>Table Booking</h3>
+
+<div class="row mb-3">
+  <div class="col"><button class="btn btn-outline-dark w-100" onclick="showTable('family')">Family</button></div>
+  <div class="col"><button class="btn btn-outline-dark w-100" onclick="showTable('friends')">Friends</button></div>
+  <div class="col"><button class="btn btn-outline-dark w-100" onclick="showTable('couple')">Couple</button></div>
+  <div class="col"><button class="btn btn-outline-dark w-100" onclick="showTable('business')">Business</button></div>
+</div>
+
+<div id="family" class="row section">
+  <div class="col-md-4"><img class="img-fluid rounded" src="https://images.unsplash.com/photo-1552566626-52f8b828add9"></div>
+  <div class="col-md-4"><img class="img-fluid rounded" src="https://images.unsplash.com/photo-1528605248644-14dd04022da1"></div>
+  <div class="col-md-4"><img class="img-fluid rounded" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"></div>
+</div>
+
+<div id="friends" class="row section">
+  <div class="col-md-4"><img class="img-fluid rounded" src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30"></div>
+  <div class="col-md-4"><img class="img-fluid rounded" src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"></div>
+</div>
+
+<div id="couple" class="row section">
+  <div class="col-md-4"><img class="img-fluid rounded" src="https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac"></div>
+  <div class="col-md-4"><img class="img-fluid rounded" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"></div>
+</div>
+
+<div id="business" class="row section">
+  <div class="col-md-4"><img class="img-fluid rounded" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"></div>
+  <div class="col-md-4"><img class="img-fluid rounded" src="https://images.unsplash.com/photo-1556761175-4b46a572b786"></div>
+</div>
+
+<div class="row mt-3">
+  <div class="col-md-4"><input type="date" class="form-control"></div>
+  <div class="col-md-4"><input type="time" class="form-control"></div>
+</div>
+
+<p class="note mt-2">Cancellation available up to 4 hours</p>
+<button class="btn btn-success">Pay Charges</button>
+</div>
+
+<!-- ================= CELEBRATION ================= -->
+<div id="celebration" class="section mt-5">
+<h3>Celebration Booking</h3>
+
+<div class="row mb-3">
+  <div class="col"><button class="btn btn-outline-primary w-100" onclick="showCelebrate('birthday')">Birthday</button></div>
+  <div class="col"><button class="btn btn-outline-primary w-100" onclick="showCelebrate('party')">Party</button></div>
+  <div class="col"><button class="btn btn-outline-primary w-100" onclick="showCelebrate('coupleTheme')">Couple Theme</button></div>
+  <div class="col"><button class="btn btn-outline-primary w-100" onclick="showCelebrate('businessMeeting')">Business</button></div>
+</div>
+
+<!-- Birthday -->
+<div id="birthday" class="row section">
+  <div class="col-md-3"><div class="card"><img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce"><div class="card-body text-center"><h6>Kids</h6><p>₹2000</p><button class="btn btn-warning">Book</button></div></div></div>
+  <div class="col-md-3"><div class="card"><img src="https://images.unsplash.com/photo-1464349153735-7db50ed83c84"><div class="card-body text-center"><h6>Anniversary</h6><p>₹3000</p><button class="btn btn-warning">Book</button></div></div></div>
+</div>
+
+<!-- Party -->
+<div id="party" class="row section">
+  <div class="col-md-4"><div class="card"><img src="https://images.unsplash.com/photo-1515168833906-d2a3b82b302a"><div class="card-body text-center"><h6>DJ Party</h6><p>₹3500</p><button class="btn btn-warning">Book</button></div></div></div>
+  <div class="col-md-4"><div class="card"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30"><div class="card-body text-center"><h6>Music Party</h6><p>₹3200</p><button class="btn btn-warning">Book</button></div></div></div>
+</div>
+
+<!-- Couple Theme -->
+<div id="coupleTheme" class="row section">
+  <div class="col-md-4"><div class="card"><img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"><div class="card-body text-center"><h6>Candle Light</h6><p>₹4500</p><button class="btn btn-warning">Book</button></div></div></div>
+  <div class="col-md-4"><div class="card"><img src="https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac"><div class="card-body text-center"><h6>Romantic Roses</h6><p>₹4200</p><button class="btn btn-warning">Book</button></div></div></div>
+</div>
+
+<!-- Business Meeting -->
+<div id="businessMeeting" class="row section">
+  <div class="col-md-4"><div class="card"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"><div class="card-body text-center"><h6>Conference</h6><p>₹3000</p><button class="btn btn-warning">Book</button></div></div></div>
+  <div class="col-md-4"><div class="card"><img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"><div class="card-body text-center"><h6>Meeting Hall</h6><p>₹3500</p><button class="btn btn-warning">Book</button></div></div></div>
+</div>
+</div>
+
+<!-- ================= PARKING ================= -->
+<div id="parking" class="section mt-5">
+<h3>Parking Booking</h3>
+
+<select class="form-select mb-2">
+<option>2 Wheeler</option>
+<option>4 Wheeler</option>
+</select>
+
+<select class="form-select mb-2">
+<option>Slot 1</option><option>Slot 2</option><option>Slot 3</option>
+<option>Slot 4</option><option>Slot 5</option><option>Slot 6</option>
+</select>
+
+<input type="date" class="form-control mb-2">
+<input type="time" class="form-control mb-2">
+
+<img class="img-fluid rounded mb-3" src="https://images.unsplash.com/photo-1506521781263-d8422e82f27a">
+
+<button class="btn btn-success">Reserve Parking</button>
+</div>
+
+</div>
+
+<script>
+function showSection(id){
+ document.querySelectorAll('.section').forEach(s=>s.style.display='none');
+ document.getElementById(id).style.display='block';
+}
+function showTable(id){
+ ['family','friends','couple','business'].forEach(i=>{
+   let el=document.getElementById(i);
+   if(el) el.style.display='none';
+ });
+ document.getElementById(id).style.display='flex';
+}
+function showCelebrate(id){
+ ['birthday','party','coupleTheme','businessMeeting'].forEach(i=>{
+   let el=document.getElementById(i);
+   if(el) el.style.display='none';
+ });
+ document.getElementById(id).style.display='flex';
+}
+</script>
+
+</body>
+</html>
